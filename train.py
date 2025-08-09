@@ -23,7 +23,8 @@ def main():
     )
     args = parser.parse_args()
 
-    model = YOLO("yolo11m-cls.pt")
+    model = YOLO("yolo12-cls.yaml")
+    # model = YOLO("yolo11m-cls.pt")
     export_dir = "./export"
 
     results = model.train(data=f"{args.data}", epochs=args.epoch, imgsz=args.size)

@@ -34,7 +34,7 @@ assert os.path.isdir(
 ), "*** export directory not found! you should export the training checkpoint to ONNX model."
 
 # crop_model = torch.hub.load("yolov5", "custom", "yolov5/yolov5m.onnx", source="local")
-crop_model = YOLO("yolo11m.pt")
+crop_model = YOLO("yolo12m.pt")
 
 with open("export/cat.json", "r") as fp:
     cat_ids = json.load(fp)

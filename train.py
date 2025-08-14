@@ -23,7 +23,7 @@ def main():
     )
     args = parser.parse_args()
 
-    model = YOLO("yolo12-cls.yaml")
+    model = YOLO("yolo12m-cls.yaml")
     # model = YOLO("yolo11m-cls.pt")
     export_dir = "./export"
 

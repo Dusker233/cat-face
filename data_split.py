@@ -69,7 +69,9 @@ for category in categories:
 
     # 如果图片数量不足 args.filter，则进行补充
     if len(images) != 0 and len(images) < args.filter:
-        print(f"Category '{category}' has less than {args.filter} images. Augmenting...")
+        print(
+            f"Category '{category}' has less than {args.filter} images. Augmenting..."
+        )
         while len(images) < args.filter:
             # 随机选择一张图片进行复制
             random_image = random.choice(images)

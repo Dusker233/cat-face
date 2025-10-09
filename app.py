@@ -26,7 +26,9 @@ IMG_SIZE = int(os.environ["IMG_SIZE"])
 FALLBACK_IMG_SIZE = int(os.environ["FALLBACK_IMG_SIZE"])
 
 CAT_BOX_MAX_RET_NUM = int(os.environ["CAT_BOX_MAX_RET_NUM"])  # 最多可以返回的猫猫框个数
-RECOGNIZE_MAX_RET_NUM = int(os.environ["RECOGNIZE_MAX_RET_NUM"])  # 最多可以返回的猫猫识别结果个数
+RECOGNIZE_MAX_RET_NUM = int(
+    os.environ["RECOGNIZE_MAX_RET_NUM"]
+)  # 最多可以返回的猫猫识别结果个数
 
 print("==> loading models...")
 assert os.path.isdir(

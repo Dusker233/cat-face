@@ -81,6 +81,7 @@ class Bottleneck(nn.Module):
 
 class ResNet(nn.Module):
     def __init__(self, blocks, num_classes=1000, expansion=4):
+        assert len(blocks) >= 4
         super(ResNet, self).__init__()
         self.expansion = expansion
 
